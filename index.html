@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<style type="text/css">
+			@media screen and (max-width: 1124px){
+				#welcome-section #big-text{
+					width: 80%;
+				}
+				#gallery{
+					display: grid;
+					grid-template-rows: 1fr 1fr 1fr;
+					grid-template-columns: 3fr 3fr;
+				}
+			}
+			@media screen and (max-width: 768px){
+				#welcome-section #big-text{
+					font-size: 15px;
+					display: block;
+				}
+				#projects{
+					height: auto;
+				}
+				#gallery{
+					display: grid;
+					grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+					grid-template-columns: 3fr;
+				}
+				.contact div{
+					display: grid;
+					grid-template-rows: 1fr 1fr 1fr 1fr;
+					grid-template-columns: 2fr;
+				}
+			}
+		</style>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+	</head>
+	<body>
+		<header>			
+			<nav id="navbar">
+				<ul>
+					<li><a href="#welcome-section">Hello!</a></li>
+					<li><a href="#projects">Works</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="welcome-section">
+				<div id="big-image"></div>
+				<div id="big-text">
+					<h1><small>Hello!,</small> I'm <b>Cham Myae</b></h1> 
+					<p>I am a professional <br><b>Post Production Audio Engineer</b></p>
+				</div>
+			</section>
+			<section id="projects">
+				<h1>These are some of my works</h1>
+				<div id="gallery">
+					<div class="project-tile">
+						<a href="https://www.pyoneplay.com/tvshows/c048b03b7f56400fbd92627f6c2d4012">
+							<img src="http://static.pyoneplay.com/static/show/show_landscape_1550132397.jpg">
+							<p>Pagan Citizen</p>
+						</a>
+					</div>
+					<div class="project-tile">
+						<a href="https://www.pyoneplay.com/tvshows/635938a198aa4c99a04ed373a36e8f3d">
+							<img src="http://static.pyoneplay.com/static/show/show_landscape_1606740376.jpg">
+							<p>Migical Village</p>
+						</a>
+					</div>
+					<div class="project-tile">
+						<a href="https://www.pyoneplay.com/tvshows/a85ba1d322c94f08911f3c6ea80d00c9">
+							<img src="http://static.pyoneplay.com/static/show/show_landscape_1552386876.jpg">
+							<p>Where There is Love</p>
+						</a>
+					</div>
+					<div class="project-tile">
+						<a href="https://www.pyoneplay.com/tvshows/8cc1b0553b9840d0bc121e2c55ff1b0b">
+							<img src="http://static.pyoneplay.com/static/show/show_landscape_1550131786.jpg">
+							<p>Footprints of Mind</p>
+						</a>
+					</div>
+					<div class="project-tile">
+						<a href="https://www.pyoneplay.com/tvshows/bf9672c21775445ba53e2747223bc199">
+							<img src="http://static.pyoneplay.com/static/show/show_landscape_1580979912.jpg">
+							<p>I Hate Myself</p>
+						</a>
+					</div>
+					<div class="project-tile">
+						<a href="https://www.pyoneplay.com/tvshows/7eee3bde957c4cf483dbc0d4570ab738">
+							<img src="http://static.pyoneplay.com/static/show/show_landscape_1591872075.jpg">
+							<p>G-Hall Thu</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="contact">
+				<div class="contact">
+					<h1>Let's work together...</h1>
+					<p><small>How do you take your coffee?</small></p>
+					<div>
+						<a href="https://www.facebook.com/chanmyae.zaw.94" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+						<a id="profile-link" href="https://github.com/chammyae24" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+						<a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+						<a href="tel:+959795279344"><i class="fas fa-mobile-alt"></i> Call me</a>
+					</div>
+				</div>
+				<div class="footer">
+					<p>Design by Cham Myae Zaw.</p>
+					<p>**This is just a fake portfolio for my Assignment.</p>
+				</div>
+			</section>
+		</main>
+	</body>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
