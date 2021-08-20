@@ -92,6 +92,23 @@ a{
 	border-top: 2px solid #f2aa4c;
 	border-bottom: 2px solid #f2aa4c;
 }
+#projects .show-more{
+	display: block;
+	background-color: white;
+	color: #f2aa4c;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px black;
+	filter: grayscale(70%);
+	-webkit-filter: grayscale(70%);
+	transition: 0.3s all ease;
+}
+#projects .show-more:hover{
+	transform: scale(1.01);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
 #projects h1{
 	font-size: 35px;
 	padding: 20px;
@@ -105,7 +122,7 @@ a{
 	padding: 10px;
 	text-align: center;
 	border-radius: 5px;
-	box-shadow: 1px 1px 5px gray;
+	box-shadow: 1px 1px 5px black;
 	filter: grayscale(70%);
 	-webkit-filter: grayscale(70%);
 	transition: 0.3s all ease;
@@ -144,21 +161,73 @@ a{
 	margin: auto;
 	text-align: center;
 }
-.contact a{
+.contact a, .contact label{
 	display: inline-block;
 	padding: 15px;
 	margin: 10px;
 	font-size: 20px;
+	cursor: pointer;
 	transition: all 0.3s ease;
 }
-.contact a:hover{
+.contact a:hover, .contact label:hover{
 	color: #f2aa4c;
 	border-bottom: 1px solid #f2aa4c;
+}
+.contact #check{
+	display: none;
 }
 .footer{
 	padding: 40px;
 	border-top: 3px solid #f2a44c;
 }
 .footer p:first-child{
-
+}
+/*-----------------------------------*/
+#form{
+	width: 100%;
+	height: auto;
+	background-color: #101820;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	color: #f2aa4c;
+}
+#form input[type=text], #form input[type=email], #form textarea{
+	width: 100%;
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px black;
+}
+#form textarea{
+	height: 100px;
+	resize: none;
+}
+#form button[type=submit]{
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f2aa4c;
+	color: #101820;
+	cursor: pointer;
+	box-shadow: 1px 1px 3px black;
+	transition: all 0.3s ease;
+}
+#form button[type=submit]:hover{
+	background-color: hsl(34, 86%, 40%);
+	color: white;
+}
+.mail-form form{
+	padding: 20px;
+}
+.mail-pic{
+	padding: 20px;
+	width: ;
+	height: auto;
+}
+.mail-pic img{
+	width: 100%;
+	height: auto;
 }
